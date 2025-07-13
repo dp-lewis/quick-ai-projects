@@ -4,64 +4,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // Sample project data (in a real app, this would come from a database or CMS)
 const projects = [
   {
-    title: "AI Chat Assistant",
-    description: "A responsive chat interface built with React and OpenAI API. Features real-time conversations, context awareness, and customizable AI personalities.",
+    title: "Phaser AI Game Experiment",
+    description: "A web-based game built with Phaser.js and AI assistance, demonstrating rapid game development with AI-generated code and logic.",
     thumbnail: "/placeholder-project.svg",
-    demoUrl: "https://example.com/chat-demo",
-    githubUrl: "https://github.com/example/ai-chat",
-    aiContribution: "95% AI-generated",
-    technologies: ["React", "TypeScript", "OpenAI API", "Tailwind CSS"],
+    demoUrl: "https://dp-lewis.github.io/phaser-with-ai-experiment/",
+    githubUrl: "https://github.com/dp-lewis/phaser-with-ai-experiment",
+    aiContribution: "90% AI-generated",
+    technologies: ["Phaser.js", "JavaScript", "HTML5", "CSS3"],
     developmentTime: "3 hours"
   },
   {
-    title: "Smart Task Manager",
-    description: "Intelligent task prioritization app with AI-powered scheduling, productivity insights, and automatic deadline suggestions based on task complexity.",
+    title: "Switcheroo",
+    description: "An interactive web application demonstrating smooth UI transitions and state management with AI-assisted development.",
     thumbnail: "/placeholder-project.svg", 
-    demoUrl: null,
-    githubUrl: "https://github.com/example/task-manager",
+    demoUrl: "https://dp-lewis.github.io/switcheroo/",
+    githubUrl: "https://github.com/dp-lewis/switcheroo",
     aiContribution: "88% AI-generated",
-    technologies: ["Vue.js", "Node.js", "MongoDB", "Express"],
-    developmentTime: "4 hours"
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Clean, modern weather app with interactive maps, 7-day forecasts, and location-based weather alerts using multiple weather APIs.",
-    thumbnail: "/placeholder-project.svg",
-    demoUrl: "https://example.com/weather-demo",
-    githubUrl: "https://github.com/example/weather-app",
-    aiContribution: "92% AI-generated",
-    technologies: ["Svelte", "Weather API", "Mapbox", "Chart.js"],
+    technologies: ["JavaScript", "CSS3", "HTML5", "DOM APIs"],
     developmentTime: "2.5 hours"
   },
   {
-    title: "AI Code Review Tool",
-    description: "Automated code review assistant that analyzes pull requests and provides suggestions for improvements, security issues, and best practices.",
+    title: "Spelling Game",
+    description: "An educational spelling game with interactive features and scoring system, built rapidly with AI assistance.",
     thumbnail: "/placeholder-project.svg",
-    demoUrl: "https://example.com/code-review-demo",
-    githubUrl: "https://github.com/example/code-review-ai",
-    aiContribution: "90% AI-generated",
-    technologies: ["Python", "GitHub API", "FastAPI", "Docker"],
-    developmentTime: "3.5 hours"
+    demoUrl: "https://dp-lewis.github.io/spelling-game/",
+    githubUrl: "https://github.com/dp-lewis/spelling-game",
+    aiContribution: "92% AI-generated",
+    technologies: ["JavaScript", "HTML5", "CSS3", "Web APIs"],
+    developmentTime: "2 hours"
   },
   {
-    title: "Recipe Generator",
-    description: "AI-powered recipe suggestion app that creates personalized recipes based on available ingredients, dietary restrictions, and cuisine preferences.",
+    title: "Package Comparison Tool",
+    description: "A utility for comparing software packages with detailed analysis features and user-friendly interface.",
     thumbnail: "/placeholder-project.svg",
-    demoUrl: null,
-    githubUrl: "https://github.com/example/recipe-generator",
-    aiContribution: "93% AI-generated",
-    technologies: ["Next.js", "OpenAI API", "Prisma", "PostgreSQL"],
+    demoUrl: "https://dp-lewis.github.io/package-comparison/",
+    githubUrl: "https://github.com/dp-lewis/package-comparison",
+    aiContribution: "85% AI-generated",
+    technologies: ["JavaScript", "Node.js", "HTML5", "CSS3"],
     developmentTime: "4 hours"
   },
   {
-    title: "Habit Tracker",
-    description: "Smart habit tracking application with AI insights, progress visualization, and personalized recommendations for building sustainable habits.",
+    title: "AI Project Showcase",
+    description: "This very website - a comprehensive showcase built with Astro to demonstrate AI-assisted rapid development capabilities.",
     thumbnail: "/placeholder-project.svg",
-    demoUrl: "https://example.com/habit-tracker-demo",
-    githubUrl: "https://github.com/example/habit-tracker",
-    aiContribution: "85% AI-generated",
-    technologies: ["React Native", "Firebase", "D3.js", "TensorFlow.js"],
-    developmentTime: "3 hours"
+    demoUrl: null,
+    githubUrl: "https://github.com/dp-lewis/quick-ai-projects",
+    aiContribution: "93% AI-generated",
+    technologies: ["Astro", "TypeScript", "CSS3", "HTML5"],
+    developmentTime: "4 hours"
   }
 ];
 
@@ -159,12 +149,8 @@ const categories = [...new Set(projects.flatMap(p => p.technologies))].sort();
   .page-title {
     font-size: 3rem;
     font-weight: 800;
-    color: white;
+    color: #fbbf24;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
 
   .page-description {
